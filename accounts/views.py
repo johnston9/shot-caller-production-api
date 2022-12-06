@@ -21,7 +21,7 @@ class AccountList(generics.ListAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        'owner__profile', 'owner__profile_id'
+        'owner__profile',
     ]
     search_fields = [
         'owner__username',
@@ -58,7 +58,7 @@ class ProjectList(generics.ListCreateAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        'owner__profile', 'owner__profile_id',
+        'owner__profile',
     ]
 
 
