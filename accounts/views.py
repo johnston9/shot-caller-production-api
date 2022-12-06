@@ -20,6 +20,13 @@ class AccountList(generics.ListAPIView):
         filters.SearchFilter,
         DjangoFilterBackend,
     ]
+    filterset_fields = [
+        'owner__profile', 'owner__profile_id'
+    ]
+    search_fields = [
+        'owner__username',
+    ]
+
 
 
 class AccountDetail(generics.RetrieveUpdateAPIView):
@@ -33,12 +40,6 @@ class AccountDetail(generics.RetrieveUpdateAPIView):
         filters.OrderingFilter,
         filters.SearchFilter,
         DjangoFilterBackend,
-    ]
-    filterset_fields = [
-        'owner__profile',
-    ]
-    search_fields = [
-        'owner__username',
     ]
 
 
@@ -57,7 +58,7 @@ class ProjectList(generics.ListCreateAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        'owner__profile',
+        'owner__profile', 'owner__profile_id',
     ]
 
 

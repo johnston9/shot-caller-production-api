@@ -18,9 +18,7 @@ class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         """ Meta for Account Serializer """
         model = Account
-        fields = [
-            'id', 'owner', 'created_at', 'updated_at',
-        ]
+        fields = '__all__'
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -35,7 +33,4 @@ class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         """ Meta for Project Serializer """
         model = Project
-        fields = [
-            'id', 'owner', 'created_at', 'updated_at',
-            'name', 'stripe_id',
-        ]
+        fields = '__all__'
