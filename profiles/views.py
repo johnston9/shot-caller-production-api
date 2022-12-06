@@ -1,4 +1,4 @@
-""" GENERICS VIEWS for the profiles app """
+""" Views for the profiles app """
 from django.db.models import Count
 from rest_framework import generics, filters
 from django_filters.rest_framework import DjangoFilterBackend
