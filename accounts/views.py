@@ -29,6 +29,17 @@ class AccountDetail(generics.RetrieveUpdateAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = AccountSerializer
     queryset = Account.objects.all().order_by('-created_at')
+    filter_backends = [
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        DjangoFilterBackend,
+    ]
+    filterset_fields = [
+        'owner__profile',
+    ]
+    search_fields = [
+        'owner__username',
+    ]
 
 
 class ProjectList(generics.ListCreateAPIView):
