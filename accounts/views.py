@@ -60,6 +60,12 @@ class ProjectList(generics.ListCreateAPIView):
     filterset_fields = [
         'owner__profile',
     ]
+    search_fields = [
+        'name',
+    ]
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
 
 
 class ProjectDetail(generics.RetrieveUpdateAPIView):
