@@ -29,7 +29,7 @@ class ProjectSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
-    name = serializers.ReadOnlyField(source='owner.profile.name')
+    owner_name = serializers.ReadOnlyField(source='owner.profile.name')
     company = serializers.ReadOnlyField(source='owner.profile.company')
 
     def get_is_owner(self, obj):
