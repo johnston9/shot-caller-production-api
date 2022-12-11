@@ -10,6 +10,9 @@ class AccountSerializer(serializers.ModelSerializer):
     """ Serializer class for Account App """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
+    profile_id = serializers.ReadOnlyField(source='owner.profile.id')
+    name = serializers.ReadOnlyField(source='owner.profile.name')
+    company = serializers.ReadOnlyField(source='owner.profile.company')
 
     def get_is_owner(self, obj):
         request = self.context['request']
@@ -25,6 +28,9 @@ class ProjectSerializer(serializers.ModelSerializer):
     """ Serializer class for Project """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
+    profile_id = serializers.ReadOnlyField(source='owner.profile.id')
+    name = serializers.ReadOnlyField(source='owner.profile.name')
+    company = serializers.ReadOnlyField(source='owner.profile.company')
 
     def get_is_owner(self, obj):
         request = self.context['request']
