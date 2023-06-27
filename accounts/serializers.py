@@ -27,7 +27,6 @@ class AccountSerializer(serializers.ModelSerializer):
 
 class ProjectSerializer(serializers.ModelSerializer):
     """ Serializer class for Project """
-    owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     owner_name = serializers.ReadOnlyField(source='owner.profile.name')
