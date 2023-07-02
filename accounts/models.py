@@ -39,6 +39,7 @@ class Project(models.Model):
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=25, blank=True)
+    url = models.CharField(max_length=25, blank=True)
     stripe_id = models.CharField(max_length=25, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
