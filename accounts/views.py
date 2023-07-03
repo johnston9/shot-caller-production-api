@@ -6,8 +6,6 @@ from .models import Account
 from .serializers import AccountSerializer
 from .models import Project
 from .serializers import ProjectSerializer
-from .models import Budget
-from .serializers import BudgetSerializer
 
 
 class AccountList(generics.ListAPIView):
@@ -76,37 +74,3 @@ class ProjectDetail(generics.RetrieveUpdateAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = ProjectSerializer
     queryset = Project.objects.all().order_by('-created_at')
-
-
-class BudgetList(generics.ListCreateAPIView):
-    """
-    List all Budgets
-    """
-    serializer_class = BudgetSerializer
-    permission_classes = [
-        permissions.IsAuthenticatedOrReadOnly
-    ]
-    queryset = Budget.objects.all().order_by('-created_at')
-    filter_backends = [
-        filters.OrderingFilter,
-        filters.SearchFilter,
-        DjangoFilterBackend,
-    ]
-    filterset_fields = [
-        'project',
-    ]
-    search_fields = [
-        'title',
-    ]
-
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
-
-
-class BudgetDetail(generics.RetrieveUpdateAPIView):
-    """
-    Budget detail view
-    """
-    permission_classes = [IsOwnerOrReadOnly]
-    serializer_class = BudgetSerializer
-    queryset = Budget.objects.all().order_by('-created_at')
