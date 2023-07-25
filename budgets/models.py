@@ -147,6 +147,116 @@ class Budget(models.Model):
     fringes_taxes_cast = models.CharField(max_length=25, blank=True)
     rights_payments_cast = models.CharField(max_length=25, blank=True)
     cast_total = models.CharField(max_length=25, blank=True)
+    production_manager_quantity = models.CharField(max_length=25, blank=True)
+    production_manager_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_manager_units_name = models.CharField(max_length=25, blank=True)
+    production_manager_rate = models.CharField(max_length=25, blank=True)
+    production_supervisor_quantity = models.CharField(
+        max_length=25, blank=True)
+    production_supervisor_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_supervisor_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_supervisor_rate = models.CharField(max_length=25, blank=True)
+    production_coordinator_quantity = models.CharField(
+        max_length=25, blank=True)
+    production_coordinator_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_coordinator_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_coordinator_rate = models.CharField(max_length=25, blank=True)
+    unit_manager_quantity = models.CharField(max_length=25, blank=True)
+    unit_manager_units_number = models.CharField(max_length=25, blank=True)
+    unit_manager_units_name = models.CharField(max_length=25, blank=True)
+    unit_manager_rate = models.CharField(max_length=25, blank=True)
+    location_manager_quantity = models.CharField(max_length=25, blank=True)
+    location_manager_units_number = models.CharField(max_length=25, blank=True)
+    location_manager_units_name = models.CharField(max_length=25, blank=True)
+    location_manager_rate = models.CharField(max_length=25, blank=True)
+    location_manager_assistant_quantity = models.CharField(
+        max_length=25, blank=True)
+    location_manager_assistant_units_number = models.CharField(
+        max_length=25, blank=True)
+    location_manager_assistant_units_name = models.CharField(
+        max_length=25, blank=True)
+    location_manager_assistant_rate = models.CharField(
+        max_length=25, blank=True)
+    production_assistants_quantity = models.CharField(
+        max_length=25, blank=True)
+    production_assistants_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_assistants_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_assistants_rate = models.CharField(max_length=25, blank=True)
+    production_secretary_quantity = models.CharField(max_length=25, blank=True)
+    production_secretary_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_secretary_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_secretary_rate = models.CharField(max_length=25, blank=True)
+    production_accountant_quantity = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_rate = models.CharField(max_length=25, blank=True)
+    production_accountant_assistant_quantity = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_assistant_units_number = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_assistant_units_name = models.CharField(
+        max_length=25, blank=True)
+    production_accountant_assistant_rate = models.CharField(
+        max_length=25, blank=True)
+    scriptsupervisor_continuity_quantity = models.CharField(
+        max_length=25, blank=True)
+    scriptsupervisor_continuity_units_number = models.CharField(
+        max_length=25, blank=True)
+    scriptsupervisor_continuity_units_name = models.CharField(
+        max_length=25, blank=True)
+    scriptsupervisor_continuity_rate = models.CharField(
+        max_length=25, blank=True)
+    payroll_quantity = models.CharField(max_length=25, blank=True)
+    payroll_units_number = models.CharField(max_length=25, blank=True)
+    payroll_units_name = models.CharField(max_length=25, blank=True)
+    payroll_rate = models.CharField(max_length=25, blank=True)
+    other_production_quantity = models.CharField(max_length=25, blank=True)
+    other_production_units_number = models.CharField(max_length=25, blank=True)
+    other_production_units_name = models.CharField(max_length=25, blank=True)
+    other_production_rate = models.CharField(max_length=25, blank=True)
+    directors_assistant_quantity = models.CharField(max_length=25, blank=True)
+    directors_assistant_units_number = models.CharField(
+        max_length=25, blank=True)
+    directors_assistant_units_name = models.CharField(
+        max_length=25, blank=True)
+    directors_assistant_rate = models.CharField(max_length=25, blank=True)
+    assistant_director_1st_quantity = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_1st_units_number = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_1st_units_name = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_1st_rate = models.CharField(max_length=25, blank=True)
+    assistant_director_2nd_quantity = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_2nd_units_number = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_2nd_units_name = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_2nd_rate = models.CharField(max_length=25, blank=True)
+    assistant_director_3rd_quantity = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_3rd_units_number = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_3rd_units_name = models.CharField(
+        max_length=25, blank=True)
+    assistant_director_3rd_rate = models.CharField(max_length=25, blank=True)
+    craft_services_quantity = models.CharField(max_length=25, blank=True)
+    craft_services_units_number = models.CharField(max_length=25, blank=True)
+    craft_services_units_name = models.CharField(max_length=25, blank=True)
+    craft_services_rate = models.CharField(max_length=25, blank=True)
 
     class Meta:
         """ Meta for ordering """
