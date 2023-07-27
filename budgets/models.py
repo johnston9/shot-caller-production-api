@@ -257,6 +257,28 @@ class Budget(models.Model):
     craft_services_units_number = models.CharField(max_length=25, blank=True)
     craft_services_units_name = models.CharField(max_length=25, blank=True)
     craft_services_rate = models.CharField(max_length=25, blank=True)
+    productionmanager_total = models.CharField(max_length=25, blank=True)
+    productionsupervisor_total = models.CharField(max_length=25, blank=True)
+    productioncoordinator_total = models.CharField(max_length=25, blank=True)
+    unitmanager_total = models.CharField(max_length=25, blank=True)
+    locationmanager_total = models.CharField(max_length=25, blank=True)
+    locationmanagerassistant_total = models.CharField(
+        max_length=25, blank=True)
+    productionassistants_total = models.CharField(max_length=25, blank=True)
+    productionsecretary_total = models.CharField(max_length=25, blank=True)
+    productionaccountant_total = models.CharField(max_length=25, blank=True)
+    productionaccountantassistant_total = models.CharField(
+        max_length=25, blank=True)
+    scriptsupervisorcontinuity_total = models.CharField(
+        max_length=25, blank=True)
+    payroll_total = models.CharField(max_length=25, blank=True)
+    otherproduction_total = models.CharField(max_length=25, blank=True)
+    directorsassistant_total = models.CharField(max_length=25, blank=True)
+    assistantdirector1st_total = models.CharField(max_length=25, blank=True)
+    assistantdirector2nd_total = models.CharField(max_length=25, blank=True)
+    assistantdirector3rd_total = models.CharField(max_length=25, blank=True)
+    craftservices_total = models.CharField(max_length=25, blank=True)
+    production_total = models.CharField(max_length=25, blank=True)
 
     class Meta:
         """ Meta for ordering """
