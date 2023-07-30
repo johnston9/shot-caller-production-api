@@ -13,6 +13,9 @@ class Budget(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    above_the_line_total = models.CharField(max_length=25, blank=True)
+    below_the_lineB_total = models.CharField(max_length=25, blank=True)
+    grand_total = models.CharField(max_length=25, blank=True)
     title = models.CharField(max_length=25, blank=True)
     series = models.CharField(max_length=25, blank=True)
     prodco = models.CharField(max_length=25, blank=True)
@@ -109,7 +112,6 @@ class Budget(models.Model):
     other_music = models.CharField(max_length=25, blank=True)
     fringes_taxes_music = models.CharField(max_length=25, blank=True)
     stars_music_total = models.CharField(max_length=25, blank=True)
-    above_the_line_total = models.CharField(max_length=25, blank=True)
     principals_quantity = models.CharField(max_length=25, blank=True)
     principals_units_number = models.CharField(max_length=25, blank=True)
     principals_units_name = models.CharField(max_length=25, blank=True)
@@ -278,7 +280,7 @@ class Budget(models.Model):
     assistantdirector2nd_total = models.CharField(max_length=25, blank=True)
     assistantdirector3rd_total = models.CharField(max_length=25, blank=True)
     craftservices_total = models.CharField(max_length=25, blank=True)
-    production_total = models.CharField(max_length=25, blank=True)
+    productionstaff_total = models.CharField(max_length=25, blank=True)
 
     class Meta:
         """ Meta for ordering """
