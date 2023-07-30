@@ -69,6 +69,7 @@ class Budget(models.Model):
     travel_expenses_scenario = models.CharField(max_length=25, blank=True)
     living_expenses_scenario = models.CharField(max_length=25, blank=True)
     other_scenario = models.CharField(max_length=25, blank=True)
+    fringes_taxes_scenario = models.CharField(max_length=25, blank=True)
     scenario_total = models.CharField(max_length=25, blank=True)
     executive_producers_quantity = models.CharField(max_length=25, blank=True)
     producers_quantity = models.CharField(max_length=25, blank=True)
