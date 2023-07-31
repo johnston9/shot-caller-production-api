@@ -44,6 +44,7 @@ class Budget(models.Model):
     travel_expenses_development = models.CharField(max_length=25, blank=True)
     living_expenses_development = models.CharField(max_length=25, blank=True)
     other_development = models.CharField(max_length=25, blank=True)
+    fringes_taxes_development = models.CharField(max_length=25, blank=True)
     development_total = models.CharField(max_length=25, blank=True)
     writers_quantity = models.CharField(max_length=25, blank=True)
     writers_units_number = models.CharField(max_length=25, blank=True)
