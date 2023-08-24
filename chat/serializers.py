@@ -46,6 +46,6 @@ class ChatSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'created_at', 'updated_at',
-            'title', 'content', 'image', 'like_id',
+            'title', 'content', 'image', 'like_id', 'name',
             'likes_count', 'comments_count', 'company',
         ]
