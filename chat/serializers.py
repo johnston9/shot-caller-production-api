@@ -8,6 +8,7 @@ class ChatSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     company = serializers.ReadOnlyField(source='owner.profile.company')
     is_owner = serializers.SerializerMethodField()
+    name = serializers.ReadOnlyField(source='owner.profile.name')
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
     like_id = serializers.SerializerMethodField()
