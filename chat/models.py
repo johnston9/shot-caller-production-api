@@ -13,7 +13,7 @@ class Chat(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='/images/default_profile_iq2tpu', blank=True
+        upload_to='images/', blank=True
     )
 
     class Meta:
