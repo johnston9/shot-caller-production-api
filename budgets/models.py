@@ -15,6 +15,13 @@ class Budget(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     above_the_line_total = models.CharField(max_length=25, blank=True)
     below_the_lineB_total = models.CharField(max_length=25, blank=True)
+    below_the_lineB_costs_total = models.CharField(max_length=25, blank=True)
+    b_labour_and_costs_total = models.CharField(max_length=25, blank=True)
+    post_productionC_total = models.CharField(max_length=25, blank=True)
+    belowB_andC_total = models.CharField(max_length=25, blank=True)
+    above_belowABC_total = models.CharField(max_length=25, blank=True)
+    otherD_total = models.CharField(max_length=25, blank=True)
+    above_belowABCandD_total = models.CharField(max_length=25, blank=True)
     grand_total = models.CharField(max_length=25, blank=True)
     title = models.CharField(max_length=25, blank=True)
     series = models.CharField(max_length=25, blank=True)
@@ -1145,11 +1152,6 @@ class Budget(models.Model):
     indirCo_total = models.CharField(max_length=25, blank=True)
     contingency = models.CharField(max_length=25, blank=True)
     completion_bond = models.CharField(max_length=25, blank=True)
-    post_productionC_total = models.CharField(max_length=25, blank=True)
-    belowB_andC_total = models.CharField(max_length=25, blank=True)
-    above_belowABC_total = models.CharField(max_length=25, blank=True)
-    otherD_total = models.CharField(max_length=25, blank=True)
-    above_belowABCandD_total = models.CharField(max_length=25, blank=True)
 
     class Meta:
         """ Meta for ordering """
