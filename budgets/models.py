@@ -774,6 +774,7 @@ class Budget(models.Model):
     office_rentals = models.CharField(max_length=25, blank=True)
     office_equipment = models.CharField(max_length=25, blank=True)
     office_supplies = models.CharField(max_length=25, blank=True)
+    phones_net = models.CharField(max_length=25, blank=True)
     courier_postage = models.CharField(max_length=25, blank=True)
     office_other = models.CharField(max_length=25, blank=True)
     proOff_total = models.CharField(max_length=25, blank=True)
