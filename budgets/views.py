@@ -2,8 +2,12 @@
 from rest_framework import generics, permissions, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from shot_caller_pro_api.permissions import IsOwnerOrReadOnly
-from .models import Budget
-from .serializers import BudgetSerializer
+from .models import Budget1
+from .models import Budget2
+from .models import Budget3
+from .serializers import BudgetSerializer1
+from .serializers import BudgetSerializer2
+from .serializers import BudgetSerializer3
 
 
 class BudgetList(generics.ListCreateAPIView):
