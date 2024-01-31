@@ -1,24 +1,20 @@
-""" Views for the Budgets app """
+""" Views for the Budgets1 app """
 from rest_framework import generics, permissions, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from shot_caller_pro_api.permissions import IsOwnerOrReadOnly
 from .models import Budget1
-from .models import Budget2
-from .models import Budget3
 from .serializers import BudgetSerializer1
-from .serializers import BudgetSerializer2
-from .serializers import BudgetSerializer3
 
 
-class BudgetList(generics.ListCreateAPIView):
+class BudgetList1(generics.ListCreateAPIView):
     """
-    List all Budgets
+    List all Budget1
     """
-    serializer_class = BudgetSerializer
+    serializer_class = BudgetSerializer1
     permission_classes = [
         permissions.IsAuthenticatedOrReadOnly
     ]
-    queryset = Budget.objects.all().order_by('-created_at')
+    queryset = Budget1.objects.all().order_by('-created_at')
     filter_backends = [
         filters.OrderingFilter,
         filters.SearchFilter,
@@ -35,10 +31,10 @@ class BudgetList(generics.ListCreateAPIView):
         serializer.save(owner=self.request.user)
 
 
-class BudgetDetail(generics.RetrieveUpdateAPIView):
+class BudgetDetail1(generics.RetrieveUpdateAPIView):
     """
-    Budget detail view
+    Budget1 detail view
     """
     permission_classes = [IsOwnerOrReadOnly]
-    serializer_class = BudgetSerializer
-    queryset = Budget.objects.all().order_by('-created_at')
+    serializer_class = BudgetSerializer1
+    queryset = Budget1.objects.all().order_by('-created_at')
