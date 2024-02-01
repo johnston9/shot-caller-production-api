@@ -22,6 +22,7 @@ class BudgetList1(generics.ListCreateAPIView):
     ]
     filterset_fields = [
         'project',
+        'budget_number',
     ]
     search_fields = [
         'title',

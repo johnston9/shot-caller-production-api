@@ -10,6 +10,7 @@ class Budget2(models.Model):
     Budget2 model
     """
     project = models.CharField(max_length=25, blank=True)
+    budget_number = models.CharField(max_length=25, blank=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
