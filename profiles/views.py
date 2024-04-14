@@ -19,12 +19,15 @@ class ProfileList(generics.ListAPIView):
     ).order_by('-created_at')
     serializer_class = ProfileSerializer
     filter_backends = [
-        filters.OrderingFilter,
+        filters.SearchFilter,
         DjangoFilterBackend,
-    ]
+        filters.OrderingFilter,
+        ]
     filterset_fields = [
         'owner__following__followed__profile',
         'owner__followed__owner__profile',
+        'name',
+        'company',
     ]
     ordering_fields = [
         'chats_count',
@@ -33,6 +36,7 @@ class ProfileList(generics.ListAPIView):
         'owner__following__created_at',
         'owner__followed__created_at',
     ]
+    search_fields = ['name', 'company']
 
 
 class ProfileDetail(generics.RetrieveUpdateAPIView):
