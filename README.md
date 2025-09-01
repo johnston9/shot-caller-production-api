@@ -275,8 +275,8 @@ sqlparse==0.4.2 <br>
 
 ### Dependencies for the Shot Caller Production React Frontend
 
-"@emotion/react": "^11.13.3", <br>
-    "@emotion/styled": "^11.13.0", <br>
+   "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@mantine/core": "^6.0.17",
     "@mantine/dates": "^6.0.17",
     "@mantine/form": "^6.0.17",
@@ -302,7 +302,7 @@ sqlparse==0.4.2 <br>
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
  
 
 [Back to Table of Content](#table-of-content)
