@@ -11,7 +11,7 @@ A Film, TV, and Video Production Platform. The Platform includes Budgeting Softw
 "Shot caller" runs the Platform while the Budgeting software is held on “Shot Caller Production”. <br> 
 
 This is the backend for Shot Caller Production. You may find the testing here.
-[Shot Caller Production Testing](https://github.com/johnston9/shot-caller-production/blob/main/TESTING.md)
+[Shot Caller Production Testing](https://github.com/johnston9/Testing-Shot-Caller-Production/blob/main/TESTING.md)
 <br>
 
 The Platform contain both the Creative and the Production sides of media production.<br>
@@ -59,11 +59,11 @@ There is no installation needed and no requirements for the app. If a User has a
 
 ### Budgeting
 - The Budget feature contains the Edit page and the Finalised Budget. The top of the Edit page contains the name of each Budget section and its current total. When clicked on it opens that section where a User can input values which are automatically totalled for that section and an number of other displaying Totals including the Grand Total. Globals can be used to quickly populate or change the crew Weeks length. The Finalised Budget, along with its Cover and Top pages can be viewed and downloaded. <br>
+
+All Features testing is covered here. [Testing](https://github.com/johnston9/Testing-Shot-Caller-Production/blob/main/TESTING.md)
  
 ## Features “Shot Caller”
 Find these here. [Shot Caller Readme](https://github.com/johnston9/shot-caller/blob/main/README.md)
-
-All Features testing is covered on the Shot Caller Production Frontend Testing page. [Testing](https://github.com/johnston9/shot-caller-production/blob/main/TESTING.md)
 
 [Back to Table of Content](#table-of-content)
 
@@ -181,8 +181,8 @@ The React Dependencies and DRF Requirements can be found in the Deployment secti
 [Back to Table of Content](#table-of-content)
 
 ## Testing
-- For the complete coverage of the Features testing go to the Testing page.
-[Shot Caller Production Testing](https://github.com/johnston9/shot-caller-production/blob/main/TESTING.md)
+- Find the complete testing coverage here.
+[Shot Caller Production Testing][Testing](https://github.com/johnston9/Testing-Shot-Caller-Production/blob/main/TESTING.md)
 
 All functionality was tested as it was being built to ensure there were no errors, that it did what it was meant to do and that all database errors were handled correctly. <br> 
 
