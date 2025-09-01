@@ -182,7 +182,7 @@ The React Dependencies and DRF Requirements can be found in the Deployment secti
 
 ## Testing
 - Find the complete testing coverage here.
-[Shot Caller Production Testing][Testing](https://github.com/johnston9/Testing-Shot-Caller-Production/blob/main/TESTING.md)
+[Shot Caller Production Testing](https://github.com/johnston9/Testing-Shot-Caller-Production/blob/main/TESTING.md)
 
 All functionality was tested as it was being built to ensure there were no errors, that it did what it was meant to do and that all database errors were handled correctly. <br> 
 
